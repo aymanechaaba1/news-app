@@ -13,8 +13,6 @@ const controlNewsList = async () => {
     const data = await fetchNewsByCategory(category);
     if (!data) return;
 
-    console.log(data);
-
     // loading data (skeleton loading)
     NewsListView.generateLoading();
 
