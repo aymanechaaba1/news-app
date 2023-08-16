@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="src/controller.js"></script>
+    <title>News App</title>
+  </head>
+  <body>
+    <div id="app">
+      <!-- Header -->
+      <header class="w-full flex items-center justify-between"></header>
+
+      <!-- Main -->
+      <main class="max-w-3xl lg:max-w-7xl mx-auto p-5">
+        <nav class="w-full flex items-center space-x-2 py-5">
+          <a href="#general" class="underline decoration-yellow-500">General</a>
+          <a href="#business" class="underline decoration-yellow-500"
+            >Business</a
+          >
+          <a href="#sports" class="underline decoration-yellow-500">Sports</a>
+          <a href="#business" class="underline decoration-yellow-500"
+            >Business</a
+          >
+          <a href="#entertainment" class="underline decoration-yellow-500"
+            >Entertainment</a
+          >
+          <a href="#health" class="underline decoration-yellow-500">Health</a>
+          <a href="#science" class="underline decoration-yellow-500">Science</a>
+          <a href="#technology" class="underline decoration-yellow-500">Tech</a>
+        </nav>
+
+        <section class="">
+          <h1 class="text-xl">Search results for: ${category}</h1>
+          <div
+            class="news_list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-5 gap-5 items-start justify-center"
+          ></div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
