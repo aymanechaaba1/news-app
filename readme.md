@@ -1,4 +1,4 @@
-# News App
+# Fully Responsive Cool News App with Vanilla JS
 
 I used a cool api called https://newsapi.org/, big thanks to the team behind it.
 
