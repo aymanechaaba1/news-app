@@ -7,3 +7,7 @@ fundamentals of javascript, data fetching with fetch api, loading state (skeleto
 ARCHITECTURE: MVC Pattern.
 
 STYLING: my favourite of all TailwindCSS.
+
+Features:
+
+- Search

@@ -22,3 +22,26 @@ export const fetchNewsByCategory = async (category = 'general') => {
     throw err;
   }
 };
+
+export const fetchNewsByQuery = async (query) => {
+  try {
+    if (!query) return;
+
+    const res = await fetch(
+      `${api_base_url}${endpoints.get(
+        'everything'
+      )}?q=${query}&pageSize=10&apiKey=${api_key}`
+    );
+
+    if (!res.ok)
+      throw new Error(
+        `Failed to fetch news by query, Please try again! (${res.status})`
+      );
+
+    const data = await res.json();
+
+    return data;
+  } catch (err) {
+    throw err;
+  }
+};
