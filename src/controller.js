@@ -7,8 +7,8 @@ import SearchView from './views/SearchView.js';
 const controlNewsList = async () => {
   try {
     // get category from hash url
-    const category = window.location.hash.slice(1);
-    if (!category) return;
+    let category = window.location.hash.slice(1);
+    if (!category) category = 'general';
 
     // fetch news
     const data = await fetchNewsByCategory(category);
